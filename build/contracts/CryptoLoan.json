@@ -1,0 +1,741 @@
+{
+  "contract_name": "CryptoLoan",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "doPayment",
+      "outputs": [],
+      "payable": true,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditorAllowExtention",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "loanSum",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "systemFee",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "checkMortgage",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getSystemFee",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "loanSumCapped",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getLoanSum",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getDepositSum",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "depositSum",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditSum",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditEnd",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "refundMortgage",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditExtentionInterest",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "increaseDebtReturnedAmount",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditInterest",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "borrowerAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getContractState",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditPeriod",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "rate",
+          "type": "uint256"
+        },
+        {
+          "name": "description",
+          "type": "string"
+        }
+      ],
+      "name": "marginCall",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "contractState",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getSystemAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "system",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "creditorFraud",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getCreditPeriod",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "returnRestOfTheGas",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getCreditId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getBorrowerAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "repayDebtAmount",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditCurrency",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint8"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "checkExpiration",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditStart",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditExtentionEnd",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_startTime",
+          "type": "uint256"
+        }
+      ],
+      "name": "dealSigned",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditExtentionUsed",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "extendCreditPeriod",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "creditExtendedPeriod",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_creditId",
+          "type": "uint256"
+        },
+        {
+          "name": "_creditPeriod",
+          "type": "uint256"
+        },
+        {
+          "name": "_creditExtendedPeriod",
+          "type": "uint256"
+        },
+        {
+          "name": "_creditSum",
+          "type": "uint256"
+        },
+        {
+          "name": "_creditInterest",
+          "type": "uint256"
+        },
+        {
+          "name": "_creditExtentionInterest",
+          "type": "uint256"
+        },
+        {
+          "name": "_creditorAllowExtention",
+          "type": "bool"
+        },
+        {
+          "name": "_marginCallEtherRate",
+          "type": "uint256"
+        },
+        {
+          "name": "_systemFee",
+          "type": "uint256"
+        },
+        {
+          "name": "_systemExtendedFee",
+          "type": "uint256"
+        },
+        {
+          "name": "_loanSum",
+          "type": "uint256"
+        },
+        {
+          "name": "_creditorAddress",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "LoanSumCapped",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_newDeposit",
+          "type": "uint256"
+        },
+        {
+          "indexed": false,
+          "name": "_depositSum",
+          "type": "uint256"
+        }
+      ],
+      "name": "DepositMade",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "DebtReturnedAmountIncrease",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "DebtRefunded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "CreditPeriodExtended",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_feeAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "SystemFeePayed",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "LoanRefunded",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [],
+      "name": "LoanRefundedToCreditor",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "_creditExtentionUsed",
+          "type": "bool"
+        },
+        {
+          "indexed": false,
+          "name": "_creditEnd",
+          "type": "uint256"
+        }
+      ],
+      "name": "CreditPeriodExpired",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x606060405260408051908101604052601881527f46697273742043727970726f4c6f616e20736572766963650000000000000000602082015260009080516200004d929160200190620001f8565b5060048054600160a060020a0319908116909155600780549091169055600f80546000919060ff19166001835b02179055506012805461ffff19169055600060178190556019805460ff19169055601a553415620000aa57600080fd5b60405161018080620017948339810160405280805191906020018051919060200180519190602001805191906020018051919060200180519190602001805191906020018051919060200180519190602001805191906020018051919060200180519150505b600160a060020a03811615156200012657600080fd5b6298968084116200013657600080fd5b6298968083116200014657600080fd5b60088c905560098b9055600d8a9055600e899055601088905560118790556012805487151560ff19909116179055601385905560158490556016839055601882905560078054600160a060020a03808416600160a060020a031992831617808455600180543390931692909316919091179091556000919060a060020a60ff02191674010000000000000000000000000000000000000000835b02179055505b505050505050505050505050620002a2565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f106200023b57805160ff19168380011785556200026b565b828001600101855582156200026b579182015b828111156200026b5782518255916020019190600101906200024e565b5b506200027a9291506200027e565b5090565b6200029f91905b808211156200027a576000815560010162000285565b5090565b90565b6114e280620002b26000396000f300606060405236156101e05763ffffffff7c01000000000000000000000000000000000000000000000000000000006000350416630567ea2581146101e457806306fdde03146101ee5780630c1eb15614610279578063110ed091146102a05780631f17ee55146102c5578063218b7fa7146102ea57806323056e99146103115780632a0420f5146103365780632fc7cf8c1461035d5780634cdd02f5146103825780634e53385a146103a757806352d487ff146103cc5780635dcfbaf1146103f15780635e4e8725146104165780636778804d1461042b578063700b06b0146104505780637327652c146104685780637729837f1461048d5780637ba61ea5146104b25780637f4e4849146104e15780638077258214610518578063822d3f271461053d57806385209ee0146105955780638dd3848f146105cc57806395bf75fd146105fb5780639e6762df1461062a578063a31e87381461063f578063b0c53da014610664578063bb5dbce71461067c578063c291ea44146106a1578063cb5a9496146106d0578063cbd28ec1146106f5578063d43f28fd1461072c578063d9bf87a414610753578063e3436bdd14610778578063edf8f6d11461079d578063f01280a1146107b5578063f5611072146107dc578063f5ca8b4e146107f1575b5b5b005b6101e0610816565b005b34156101f957600080fd5b610201610932565b60405160208082528190810183818151815260200191508051906020019080838360005b8381101561023e5780820151818401525b602001610225565b50505050905090810190601f16801561026b5780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561028457600080fd5b61028c6109d0565b604051901515815260200160405180910390f35b34156102ab57600080fd5b6102b36109d9565b60405190815260200160405180910390f35b34156102d057600080fd5b6102b36109df565b60405190815260200160405180910390f35b34156102f557600080fd5b61028c6109e5565b604051901515815260200160405180910390f35b341561031c57600080fd5b6102b3610a0f565b60405190815260200160405180910390f35b341561034157600080fd5b61028c610a16565b604051901515815260200160405180910390f35b341561036857600080fd5b6102b3610a1f565b60405190815260200160405180910390f35b341561038d57600080fd5b6102b3610a26565b60405190815260200160405180910390f35b34156103b257600080fd5b6102b3610a2d565b60405190815260200160405180910390f35b34156103d757600080fd5b6102b3610a33565b60405190815260200160405180910390f35b34156103fc57600080fd5b6102b3610a39565b60405190815260200160405180910390f35b341561042157600080fd5b6101e0610a3f565b005b341561043657600080fd5b6102b3610aff565b60405190815260200160405180910390f35b341561045b57600080fd5b6101e0600435610b05565b005b341561047357600080fd5b6102b3610cc3565b60405190815260200160405180910390f35b341561049857600080fd5b6102b3610cc9565b60405190815260200160405180910390f35b34156104bd57600080fd5b6104c5610ccf565b604051600160a060020a03909116815260200160405180910390f35b34156104ec57600080fd5b6104f4610cde565b6040518082600881111561050457fe5b60ff16815260200191505060405180910390f35b341561052357600080fd5b6102b3610cef565b60405190815260200160405180910390f35b341561054857600080fd5b6101e0600480359060446024803590810190830135806020601f82018190048102016040519081016040528181529291906020840183838082843750949650610cf595505050505050565b005b34156105a057600080fd5b6104f4610e50565b6040518082600881111561050457fe5b60ff16815260200191505060405180910390f35b34156105d757600080fd5b6104c5610e60565b604051600160a060020a03909116815260200160405180910390f35b341561060657600080fd5b6104c5610e70565b604051600160a060020a03909116815260200160405180910390f35b341561063557600080fd5b6101e0610e7f565b005b341561064a57600080fd5b6102b3610fb7565b60405190815260200160405180910390f35b341561066f57600080fd5b6101e0600435610fbe565b005b341561068757600080fd5b6102b36110c4565b60405190815260200160405180910390f35b34156106ac57600080fd5b6104c56110cb565b604051600160a060020a03909116815260200160405180910390f35b34156106db57600080fd5b6102b36110db565b60405190815260200160405180910390f35b341561070057600080fd5b6107086110e1565b6040518082600281111561050457fe5b60ff16815260200191505060405180910390f35b341561073757600080fd5b61028c6110ea565b604051901515815260200160405180910390f35b341561075e57600080fd5b6102b361127e565b60405190815260200160405180910390f35b341561078357600080fd5b6102b3611284565b60405190815260200160405180910390f35b34156107a857600080fd5b6101e060043561128a565b005b34156107c057600080fd5b61028c61130e565b604051901515815260200160405180910390f35b34156107e757600080fd5b6101e061131c565b005b34156107fc57600080fd5b6102b36113bf565b60405190815260200160405180910390f35b60005b60075460a060020a900460ff16600881111561083157fe5b1461083b57600080fd5b600454600160a060020a03161515610876576004805473ffffffffffffffffffffffffffffffffffffffff191633600160a060020a03161790555b601a54610889903463ffffffff6113c516565b601a81905560185490106108f2576019805460ff191660019081179091556007805460a060020a60ff02191660a060020a835b02179055507f0fa713efb94ff9c72c00a7aa1a1237d4ee5b91d80ed3c6271ef3b057e4f4083060405160405180910390a161092f565b7f0793979a87d9a8a3698d9afc4736042bcc2a41b10151127638dcdef36ede4ce134601a5460405191825260208201526040908101905180910390a15b5b565b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156109c85780601f1061099d576101008083540402835291602001916109c8565b820191906000526020600020905b8154815290600101906020018083116109ab57829003601f168201915b505050505081565b60125460ff1681565b60185481565b60155481565b60015460009033600160a060020a03908116911614610a0357600080fd5b5060195460ff165b5b90565b6015545b90565b60195460ff1681565b6018545b90565b601a545b90565b601a5481565b600e5481565b600b5481565b60015433600160a060020a03908116911614610a5a57600080fd5b60015b60075460a060020a900460ff166008811115610a7557fe5b1480610a99575060005b60075460a060020a900460ff166008811115610a9757fe5b145b1515610aa457600080fd5b600454601a54600160a060020a039091169080156108fc0290604051600060405180830381858888f193505050501515610add57600080fd5b600780546002919060a060020a60ff02191660a060020a835b02179055505b5b565b60115481565b60015433600160a060020a03908116911614610b2057600080fd5b60035b60075460a060020a900460ff166008811115610b3b57fe5b14610b4557600080fd5b601754610b58908263ffffffff6113c516565b507fbccb6839dcb379119594bedf430152a9f7d30ec8d7632a54ad861e85ae1617b78160405190815260200160405180910390a1601054600e5401601754101515610cbe577f3e1ca601ec12c0ab4a62abf14fdd6ef20cdf5d1a2688afe704fda1f28f2c9b6860405160405180910390a1600154601554600160a060020a039091169080156108fc0290604051600060405180830381858888f193505050501515610c0257600080fd5b60008051602061149783398151915260155460405190815260200160405180910390a1600454601554601a54600160a060020a03909216916108fc91610c4e919063ffffffff6113df16565b9081150290604051600060405180830381858888f193505050501515610c7357600080fd5b7f016d6a6e6b8c745315f3898a25e13d59e91afd8d473221ff279a4cb2ee79dcf160405160405180910390a1600780546006919060a060020a60ff02191660a060020a835b02179055505b5b5b50565b60085481565b60105481565b600454600160a060020a031681565b60075460a060020a900460ff165b90565b60095481565b60015433600160a060020a03908116911614610d1057600080fd5b601354821115610d1f57600080fd5b60035b60075460a060020a900460ff166008811115610d3a57fe5b14610d4457600080fd5b6014818051610d579291602001906113f6565b5060078054819060a060020a60ff02191660a060020a825b0217905550600154601554600160a060020a039091169080156108fc0290604051600060405180830381858888f193505050501515610dad57600080fd5b60008051602061149783398151915260155460405190815260200160405180910390a1600754601554601a54600160a060020a03909216916108fc91610df9919063ffffffff6113df16565b9081150290604051600060405180830381858888f193505050501515610e1e57600080fd5b7fe6d706a38cfe0b7857c4a34391f389368a5e16e56d8ce2074f6bf9ce0c73664760405160405180910390a15b5b5050565b60075460a060020a900460ff1681565b600154600160a060020a03165b90565b600154600160a060020a031681565b60015433600160a060020a03908116911614610e9a57600080fd5b60035b60075460a060020a900460ff166008811115610eb557fe5b14610ebf57600080fd5b600780546008919060a060020a60ff02191660a060020a835b0217905550600154601554600160a060020a039091169080156108fc0290604051600060405180830381858888f193505050501515610f1657600080fd5b60008051602061149783398151915260155460405190815260200160405180910390a1600454601554601a54600160a060020a03909216916108fc91610f62919063ffffffff6113df16565b9081150290604051600060405180830381858888f193505050501515610f8757600080fd5b7f016d6a6e6b8c745315f3898a25e13d59e91afd8d473221ff279a4cb2ee79dcf160405160405180910390a15b5b565b6009545b90565b60015433600160a060020a03908116911614610fd957600080fd5b60065b60075460a060020a900460ff166008811115610ff457fe5b1480611018575060075b60075460a060020a900460ff16600881111561101657fe5b145b8061103b575060085b60075460a060020a900460ff16600881111561103957fe5b145b8061105e575060045b60075460a060020a900460ff16600881111561105c57fe5b145b80611081575060025b60075460a060020a900460ff16600881111561107f57fe5b145b151561108c57600080fd5b600154600160a060020a031681156108fc0282604051600060405180830381858888f193505050501515610cbe57600080fd5b5b5b50565b6008545b90565b600454600160a060020a03165b90565b60175481565b600f5460ff1681565b60015460009033600160a060020a0390811691161461110857600080fd5b600b54421161111657600080fd5b60035b60075460a060020a900460ff16600881111561113157fe5b1461113b57600080fd5b600780546004919060a060020a60ff02191660a060020a835b0217905550601254600b547f39c9412838994781d2840691671f58bf8dab3c4123ca1a8022c99bf84175c2ee91610100900460ff1690604051911515825260208201526040908101905180910390a1600154601554600160a060020a039091169080156108fc0290604051600060405180830381858888f1935050505015156111dc57600080fd5b60008051602061149783398151915260155460405190815260200160405180910390a1600754601554601a54600160a060020a03909216916108fc91611228919063ffffffff6113df16565b9081150290604051600060405180830381858888f19350505050151561124d57600080fd5b7fe6d706a38cfe0b7857c4a34391f389368a5e16e56d8ce2074f6bf9ce0c73664760405160405180910390a15b5b90565b600a5481565b600c5481565b60015433600160a060020a039081169116146112a557600080fd5b60015b60075460a060020a900460ff1660088111156112c057fe5b146112ca57600080fd5b600a819055600954620151809081028201600b55600d54028101600c55600780546003919060a060020a60ff02191660a060020a83610cb8565b02179055505b5b50565b601254610100900460ff1681565b600b544281901061132c57600080fd5b60045433600160a060020a0390811691161461134757600080fd5b60125460ff16151561135857600080fd5b601254610100900460ff161561136d57600080fd5b6012805461ff001916610100179055600c54600b556011546010556016546015557f825acdfc269701aace07625239adc6a6598a39422e6b7f70d4dc61de8e35b44760405160405180910390a15b5b50565b600d5481565b6000828201838110156113d457fe5b8091505b5092915050565b6000828211156113eb57fe5b508082035b92915050565b828054600181600116156101000203166002900490600052602060002090601f016020900481019282601f1061143757805160ff1916838001178555611464565b82800160010185558215611464579182015b82811115611464578251825591602001919060010190611449565b5b50611471929150611475565b5090565b610a0b91905b80821115611471576000815560010161147b565b5090565b905600d8bf19ae2b4afd740e80d6621e351586ef6d9da261ccc980ef558ff4f8861394a165627a7a72305820dde72996f6a81d95ff633896f7e14ed0d7c0a35fefc6299be89dbe6549a1a9400029",
+  "networks": {
+    "1510227709058": {
+      "links": {},
+      "events": {
+        "0x0fa713efb94ff9c72c00a7aa1a1237d4ee5b91d80ed3c6271ef3b057e4f40830": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "LoanSumCapped",
+          "type": "event"
+        },
+        "0x0793979a87d9a8a3698d9afc4736042bcc2a41b10151127638dcdef36ede4ce1": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_newDeposit",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "name": "_depositSum",
+              "type": "uint256"
+            }
+          ],
+          "name": "DepositMade",
+          "type": "event"
+        },
+        "0x7422969371c3ab59c0b7a0567de9da3a1a10b699b54d2de8215f2c121791e7ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "DebtReturnedAmoundIncrease",
+          "type": "event"
+        },
+        "0x3e1ca601ec12c0ab4a62abf14fdd6ef20cdf5d1a2688afe704fda1f28f2c9b68": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "DebtRefunded",
+          "type": "event"
+        },
+        "0x825acdfc269701aace07625239adc6a6598a39422e6b7f70d4dc61de8e35b447": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "CreditPeriodExtended",
+          "type": "event"
+        },
+        "0xd8bf19ae2b4afd740e80d6621e351586ef6d9da261ccc980ef558ff4f8861394": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_feeAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "SystemFeePayed",
+          "type": "event"
+        },
+        "0x016d6a6e6b8c745315f3898a25e13d59e91afd8d473221ff279a4cb2ee79dcf1": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "LoanRefunded",
+          "type": "event"
+        },
+        "0xe6d706a38cfe0b7857c4a34391f389368a5e16e56d8ce2074f6bf9ce0c736647": {
+          "anonymous": false,
+          "inputs": [],
+          "name": "LoanRefundedToCreditor",
+          "type": "event"
+        },
+        "0x39c9412838994781d2840691671f58bf8dab3c4123ca1a8022c99bf84175c2ee": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_creditExtentionUsed",
+              "type": "bool"
+            },
+            {
+              "indexed": false,
+              "name": "_creditEnd",
+              "type": "uint256"
+            }
+          ],
+          "name": "CreditPeriodExpired",
+          "type": "event"
+        }
+      },
+      "updated_at": 1510315157413
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1510426859695
+}
